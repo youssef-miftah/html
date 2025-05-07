@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="res/images/favicon.ico">
+    <title>My Dashboard</title>
+</head>
+<body>
+    <header>
+        <strong>Welcome to your dashboard!</strong>
+    </header>
+
+    <section>
+        <div>
+            <img src="res/images/me.png" width="128" height="128" alt="My picture">
+        </div>
+        <div>
+            <ul>
+                <li>Your name</li>
+                <li>A date following this format dd/mm/yyyy</li>
+                <li>Software Engineering</li>
+            </ul>
+        </div>
+        <div>
+            <strong>2.65</strong>
+        </div>
+    </section>
+
+    <section>
+        <h1>Courses</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Course Title</th>
+                    <th>Semester</th>
+                    <th>Grades</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><a href="https://example.com/agile">Agile software development</a></td>
+                    <td>fall</td>
+                    <td>82</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="https://example.com/systems">Systems modelling</a></td>
+                    <td>fall</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="https://example.com/requirements">Requirements Engineering</a></td>
+                    <td>Fall</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="https://example.com/hci">Human Computer Interaction</a></td>
+                    <td>fall</td>
+                    <td>65</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Average</td>
+                    <td>82.75</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section>
+        <h2>Add New Course</h2>
+        <form>
+            <label>Course Title:<br>
+                <input type="text" name="courseTitle">
+            </label><br>
+            
+            <label>Semester:<br>
+                <select name="semester">
+                    <option value="fall">Fall</option>
+                    <option value="spring">Spring</option>
+                </select>
+            </label><br>
+            
+            <fieldset>
+                <legend>Attendance:</legend>
+                <label>
+                    <input type="radio" name="attendance" value="virtual"> Virtual attendance
+                </label><br>
+                <label>
+                    <input type="radio" name="attendance" value="physical"> Physical attendance
+                </label>
+            </fieldset>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="https://www.inpt.ac.ma/" target="_blank" rel="noopener noreferrer">moodle</a>
+            </li>
+            <li>
+                <a href="https://m.inpt.ac.ma/" target="_blank" rel="noopener noreferrer">Courses</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
